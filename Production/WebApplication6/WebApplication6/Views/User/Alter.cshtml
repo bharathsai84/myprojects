@@ -1,0 +1,11 @@
+﻿@model WebApplication6.Models.UserAccount
+@{
+    ViewBag.Title = "Alter";
+}
+<p>Enter your Email adress</p>
+@using (Html.BeginForm("Change", "Account", FormMethod.Post))
+{
+    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+    <button type="submit">Yes</button>
+}

@@ -1,0 +1,8 @@
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\StaticVariablesCheck\StaticVariablesCheck\bin\Debug\StaticVariablesCheck.exe.config
+C:\Users\saibharath.gudimella\Documents\Visual Studio 2015\Projects\StaticVariablesCheck\StaticVariablesCheck\bin\Debug\StaticVariablesCheck.exe
+C:\Users\saibharath.gudimella\Documents\Visual Studio 2015\Projects\StaticVariablesCheck\StaticVariablesCheck\bin\Debug\StaticVariablesCheck.pdb
+C:\Users\saibharath.gudimella\Documents\Visual Studio 2015\Projects\StaticVariablesCheck\StaticVariablesCheck\bin\Debug\TwoProcessOnSameInstance.exe
+C:\Users\saibharath.gudimella\Documents\Visual Studio 2015\Projects\StaticVariablesCheck\StaticVariablesCheck\bin\Debug\TwoProcessOnSameInstance.pdb
+C:\Users\saibharath.gudimella\Documents\Visual Studio 2015\Projects\StaticVariablesCheck\StaticVariablesCheck\obj\Debug\StaticVariablesCheck.csprojResolveAssemblyReference.cache
+C:\Users\saibharath.gudimella\Documents\Visual Studio 2015\Projects\StaticVariablesCheck\StaticVariablesCheck\obj\Debug\StaticVariablesCheck.exe
+C:\Users\saibharath.gudimella\Documents\Visual Studio 2015\Projects\StaticVariablesCheck\StaticVariablesCheck\obj\Debug\StaticVariablesCheck.pdb

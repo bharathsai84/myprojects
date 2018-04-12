@@ -1,0 +1,221 @@
+﻿<Page
+    x:Class="ExGit.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ExGit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot x:Name="rootPivot">
+            <Pivot.RightHeader>
+                <CommandBar ClosedDisplayMode="Compact">
+                    <AppBarButton Icon="Setting" Label="Settings" Click="Setting_Click"/>
+                </CommandBar>
+            </Pivot.RightHeader>
+            <PivotItem Header="My DashBoard">
+                <RelativePanel>
+                    <!--<ListView Name="InventoryList" ItemsSource="{x:Bind inventoryList}"
+                  SelectionMode="Single"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.IsVerticalRailEnabled="True"
+                  ScrollViewer.VerticalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.IsHorizontalRailEnabled="True"
+                  SelectionChanged="ListView_OnSelectionChanged"
+                  IsItemClickEnabled="True" ItemClick="InventoryList_ItemClick"
+                  Margin="20">
+                        <ListView.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal"  >
+                                    <TextBlock Text="RepoID" Margin="8,0" Width="50" Foreground="DarkRed" />
+                                    <TextBlock Text="Name" Width="50" Foreground="DarkRed" />
+                                    <TextBlock Text="RepoURL" Width="100" Foreground="DarkRed" />
+                                    <TextBlock Text="WorkingDirectory" Width="380" Foreground="DarkRed" />
+                                    <TextBlock Text="AutoTrack" Width="90" Foreground="DarkRed" />
+                                    <TextBlock Text="EnableDesktopNotification" Width="180" Foreground="DarkRed" />
+                                    <TextBlock Text="NotificationEmail" Width="140" Foreground="DarkRed" />
+                                    <TextBlock Text="CurrentBranch" Width="140" Foreground="DarkRed" />
+                                    <TextBlock Text="IsUntracked" Width="180" Foreground="DarkRed" />
+                                    <TextBlock Text="CreatedAt" Width="160" Foreground="DarkRed" />
+                                    <TextBlock Text="ModifiedAt" Width="140" Foreground="DarkRed" />
+                                    <TextBlock Text="RecentCheck" Width="160" Foreground="DarkRed" />
+                                    <TextBlock Text="IsActive" Width="70" Foreground="DarkRed" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.HeaderTemplate>
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="local:RepoModel">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Name="ItemId"
+                            Text="{x:Bind repoID}"
+                                    Width="50" FontSize="12"/>
+                                    <TextBlock Name="ItemName"
+                                    Text="{x:Bind name}"
+                                    Width="50" FontSize="12" />
+                                    <TextBlock Text="{x:Bind repourl}"
+                                   Width="100" FontSize="12" />
+                                    <TextBlock Text="{x:Bind WorkingDirectory}"
+                                   Width="420" FontSize="10" />
+                                    <CheckBox  IsChecked="{x:Bind AutoTrack}" IsThreeState="False" />
+                                    <CheckBox  IsChecked="{x:Bind EnableDesNot}" IsThreeState="False" />
+                                    <TextBlock Text="{x:Bind NotificationEmail}"
+                                   Width="190" />
+                                    <TextBlock Text="{x:Bind CurrentBranch}"
+                                   Width="120"  />
+                                    <CheckBox Width="100" IsChecked="{x:Bind IsUntrackedRepo}" IsThreeState="False"/>
+                                    <TextBlock Text="{x:Bind CreatedAt}"
+                                   Width="170" FontSize="12" />
+                                    <TextBlock Text="{x:Bind ModifiedAt}"
+                                   Width="120" FontSize="12" />
+                                    <TextBlock Text="{x:Bind RecentCheck}"
+                                   Width="220" FontSize="12"/>
+                                    <CheckBox  IsChecked="{x:Bind IsActive}" IsThreeState="False"/>
+                                    <AppBarButton Icon="edit" Click="Edit_Click"/>
+                                    <AppBarButton Icon="Delete" Click="Delete_click"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>-->
+
+                    <ListView Name="InventoryList" ItemsSource="{x:Bind inventoryList}"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.IsVerticalRailEnabled="True"
+                  ScrollViewer.VerticalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.IsHorizontalRailEnabled="True"
+                  SelectionChanged="ListView_OnSelectionChanged"
+                  IsItemClickEnabled="True" ItemClick="InventoryList_ItemClick"
+                  Margin="20">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="BorderBrush" Value="Black" />
+                                <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                        <ListView.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal"  >
+                                    <TextBlock Text="RepoID" Margin="8,0" Width="50" Foreground="DarkRed" />
+                                    <TextBlock Text="Name" Width="50" Foreground="DarkRed" />
+                                    <TextBlock Text="RepoURL" Width="100" Foreground="DarkRed" />
+                                    <TextBlock Text="WorkingDirectory" Width="380" Foreground="DarkRed" />
+                                    <TextBlock Text="AutoTrack" Width="90" Foreground="DarkRed" />
+                                    <TextBlock Text="EnableDesktopNotification" Width="180" Foreground="DarkRed" />
+                                    <TextBlock Text="NotificationEmail" Width="140" Foreground="DarkRed" />
+                                    <TextBlock Text="CurrentBranch" Width="140" Foreground="DarkRed" />
+                                    <TextBlock Text="IsUntracked" Width="180" Foreground="DarkRed" />
+                                    <TextBlock Text="CreatedAt" Width="160" Foreground="DarkRed" />
+                                    <TextBlock Text="ModifiedAt" Width="140" Foreground="DarkRed" />
+                                    <TextBlock Text="RecentCheck" Width="160" Foreground="DarkRed" />
+                                    <TextBlock Text="IsActive" Width="70" Foreground="DarkRed" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.HeaderTemplate>
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="local:RepoModel">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Name="ItemId"
+                                             Text="{x:Bind repoID}"
+                                    Width="50" FontSize="12"/>
+                                    <TextBlock Name="ItemName"
+                                    Text="{x:Bind name}"
+                                    Width="50" FontSize="12" />
+                                    <TextBlock Text="{x:Bind repourl}"
+                                   Width="100" FontSize="12" />
+                                    <TextBlock Text="{x:Bind WorkingDirectory}"
+                                   Width="420" FontSize="10" />
+                                    <CheckBox  IsChecked="{x:Bind AutoTrack}" IsThreeState="False" />
+                                    <CheckBox  IsChecked="{x:Bind EnableDesNot}" IsThreeState="False" />
+                                    <TextBlock Text="{x:Bind NotificationEmail}"
+                                   Width="190" />
+                                    <TextBlock Text="{x:Bind CurrentBranch}"
+                                   Width="120"  />
+                                    <CheckBox Width="100" IsChecked="{x:Bind IsUntrackedRepo}" IsThreeState="False"/>
+                                    <TextBlock Text="{x:Bind CreatedAt}"
+                                   Width="170" FontSize="12" />
+                                    <TextBlock Text="{x:Bind ModifiedAt}"
+                                   Width="120" FontSize="12" />
+                                    <TextBlock Text="{x:Bind RecentCheck}"
+                                   Width="220" FontSize="12"/>
+                                    <CheckBox  IsChecked="{x:Bind IsActive}" IsThreeState="False"/>
+                                    <AppBarButton Icon="edit" Click="Edit_Click"/>
+                                    <AppBarButton Icon="Delete" Click="Delete_click"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+
+                </RelativePanel>
+            </PivotItem>
+            <PivotItem Header="Untracked Repos">
+                <RelativePanel>
+                    <ListView Name="UntrackedList"
+                  SelectionMode="Single"
+                  ScrollViewer.VerticalScrollBarVisibility="Auto"
+                  ScrollViewer.IsVerticalRailEnabled="True"
+                  ScrollViewer.VerticalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollMode="Enabled"
+                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                  ScrollViewer.IsHorizontalRailEnabled="True"
+                  Margin="20">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="BorderBrush" Value="Black" />
+                                <Setter Property="BorderThickness" Value="1,1,1,1"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                        <ListView.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal"  >
+                                    <Border BorderBrush="Black" BorderThickness="1,1,1,0">
+                                        <TextBlock Text="RepoID" Margin="8,0" Width="100" Foreground="DarkRed"/>
+
+                                    </Border>
+                                    <Border BorderBrush="Black" BorderThickness="1,1,1,0">
+                                        <TextBlock Text="Name" Width="150" Foreground="DarkRed" />
+
+                                    </Border>
+                                    <Border BorderBrush="Black" BorderThickness="1,1,1,0">
+                                        <TextBlock Text="CreatedAt" Width="200" Foreground="DarkRed" />
+                                    </Border>
+                                    <Border BorderBrush="Black" BorderThickness="1,1,1,0">
+                                        <TextBlock Text="ModifiedAt" Width="200" Foreground="DarkRed" />
+
+                                    </Border>
+                                    <!--<TextBlock Text="RepoID" Margin="8,0" Width="100" Foreground="DarkRed"/>
+                                    <TextBlock Text="Name" Width="150" Foreground="DarkRed" />
+                                    <TextBlock Text="CreatedAt" Width="200" Foreground="DarkRed" />
+                                    <TextBlock Text="ModifiedAt" Width="200" Foreground="DarkRed" />-->
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.HeaderTemplate>
+                        <ListView.ItemTemplate>
+
+                            <DataTemplate x:DataType="local:UntrackedModel">
+                                <StackPanel Orientation="Horizontal" >
+                                    <TextBlock Name="ItemId"
+                            Text="{x:Bind repoID}"
+                                    Width="100"/>
+                                    <TextBlock Name="ItemName"
+                                    Text="{x:Bind name}"
+                                    Width="150" />
+                                    <TextBlock Text="{x:Bind CreatedAt}"
+                                   Width="200" />
+                                    <TextBlock Text="{x:Bind ModifiedAt}"
+                                   Width="200" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </RelativePanel>
+            </PivotItem>
+        </Pivot>
+
+    </Grid>
+</Page>

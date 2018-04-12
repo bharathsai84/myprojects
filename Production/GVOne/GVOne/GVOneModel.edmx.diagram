@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3e6024936a364e77ba3d5b3ff7d86440" Name="Diagram1">
+        <EntityTypeShape EntityType="GVOneModel.tblAlert" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GVOneModel.tblLoan" Width="1.5" PointX="5.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GVOneModel.tblLoanStatu" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GVOneModel.tblRole" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GVOneModel.tblSetting" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GVOneModel.tblUser" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GVOneModel.tblUserAlert" Width="1.5" PointX="8.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GVOneModel.tblUserLoan" Width="1.5" PointX="7.5" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="GVOneModel.FK_UAAlert" ManuallyRouted="false" />
+        <AssociationConnector Association="GVOneModel.FK_LStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="GVOneModel.FK_LUser" ManuallyRouted="false" />
+        <AssociationConnector Association="GVOneModel.FK_ULLoan" ManuallyRouted="false" />
+        <AssociationConnector Association="GVOneModel.FK_ULRole" ManuallyRouted="false" />
+        <AssociationConnector Association="GVOneModel.FK_suser" ManuallyRouted="false" />
+        <AssociationConnector Association="GVOneModel.FK_UAUser" ManuallyRouted="false" />
+        <AssociationConnector Association="GVOneModel.FK_ULUser" ManuallyRouted="false" />
+        <AssociationConnector Association="GVOneModel.tblUserRole" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,5 @@
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\DomainLayer\bin\Debug\DomainLayer.dll
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\DomainLayer\bin\Debug\DomainLayer.pdb
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\DomainLayer\obj\Debug\DomainLayer.csprojResolveAssemblyReference.cache
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\DomainLayer\obj\Debug\DomainLayer.dll
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\DomainLayer\obj\Debug\DomainLayer.pdb

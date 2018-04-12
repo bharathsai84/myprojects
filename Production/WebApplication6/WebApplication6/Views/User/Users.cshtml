@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Users";
+}
+@if (User.Identity.IsAuthenticated)
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">@User.Identity.Name</a></li>
+        <li><a href="@Url.Action("SignOut","Account")">Sign Out</a></li>
+    </ul>
+}
+<h2>Users</h2>
+
+<p>Welcome to users page</p>

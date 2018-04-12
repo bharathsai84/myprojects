@@ -1,0 +1,11 @@
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\bin\Debug\BusinessLayer.dll
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\bin\Debug\BusinessLayer.pdb
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\bin\Debug\ConsoleRepository.dll
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\bin\Debug\DomainLayer.dll
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\bin\Debug\DataAccess.dll
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\bin\Debug\ConsoleRepository.pdb
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\bin\Debug\DomainLayer.pdb
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\bin\Debug\DataAccess.pdb
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\obj\Debug\BusinessLayer.dll
+c:\users\saibharath.gudimella\documents\visual studio 2015\Projects\AutoMapperImplementation\BusinessLayer\obj\Debug\BusinessLayer.pdb
